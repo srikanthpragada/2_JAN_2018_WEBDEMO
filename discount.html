@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Discount Calculation</title>
+    <script>
+        function calculate() {
+            var amount = document.getElementById("amount");
+            var rate = document.getElementById("disrate");
+            var discount = document.getElementById("discount");
+
+            var result = amount.value * rate.value / 100;
+            discount.innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Discount calculation</h1>
+    Amount  <br/>
+    <input type="number" id="amount" />
+    <p></p>
+    Discount Rate  <br/>
+    <input type="number" id="disrate" />
+    <p></p>
+    <button onclick="calculate()">Calculate</button>
+    <p></p>
+    <h2 id="discount"></h2>
+
+</body>
+</html>
